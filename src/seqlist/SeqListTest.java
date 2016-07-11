@@ -12,6 +12,8 @@ public class SeqListTest {
 		seqList.insert(0);
 		seqList.display();
 		
+		//哈哈
+		
 		System.out.println(seqList.binarySearch(3) + "");
 		
 //		System.out.println(seqList.search(3));
