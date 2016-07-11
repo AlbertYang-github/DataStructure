@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 直接选择排序算法
+ * straight selection sort algorithm
  */
 public class StraightSelectionSort {
 	public static void sort(long[] arr) {

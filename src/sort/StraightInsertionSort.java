@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 直接插入排序算法
+ * straight insert sort algorithm
  */
 public class StraightInsertionSort {
 	public static void sort(long[] arr) {

@@ -1,15 +1,15 @@
 package seqlist;
 
 /**
- * 顺序表
+ * sequential list
  */
 public class SeqList {
 	private long[] arr;
-	// 顺序表的有效长度
+	// the valid length of sequential list
 	private int elements;
 
 	public SeqList() {
-		// 默认大小为50
+		// the default size is 50
 		arr = new long[50];
 	}
 
@@ -18,14 +18,14 @@ public class SeqList {
 	}
 
 	/**
-	 * 显示数据的长度
+	 * size
 	 */
 	public int size() {
 		return elements;
 	}
 
 	/**
-	 * 插入数据
+	 * insert data
 	 */
 	public void insert(long value) {
 		if (elements == 0) {
@@ -49,7 +49,7 @@ public class SeqList {
 	}
 
 	/**
-	 * 遍历数据
+	 * ergodic sequential list
 	 */
 	public void display() {
 		System.out.print("[ ");
@@ -60,7 +60,7 @@ public class SeqList {
 	}
 
 	/**
-	 * 根据值找索引
+	 *  find index according to value
 	 */
 	public int search(long value) {
 		int i;
@@ -78,7 +78,7 @@ public class SeqList {
 	}
 
 	/**
-	 * 根据值找索引（二分法）
+	 * find index according to value（dichotomy）
 	 */
 	public int binarySearch(long value) {
 		int head = 0;
@@ -89,10 +89,10 @@ public class SeqList {
 			if (value == arr[middle]) {
 				return middle;
 			} else if (value < arr[middle]) {
-				//左边
+				//the left
 				tail = middle - 1;
 			} else {
-				//右边
+				//the right
 				head = middle + 1;
 			}
 			if (tail - head < 2) {
@@ -102,7 +102,7 @@ public class SeqList {
 	}
 
 	/**
-	 * 根据索引查找数据
+	 * find data by index
 	 */
 	public long get(int index) {
 		if (index >= elements || index < 0) {
@@ -113,7 +113,7 @@ public class SeqList {
 	}
 
 	/**
-	 * 删除元素
+	 * delete data
 	 */
 	public void delete(int index) {
 		if (index >= elements || index < 0) {

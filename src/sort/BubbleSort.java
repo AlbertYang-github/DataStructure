@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * √∞≈›≈≈–ÚÀ„∑®
+ * bubble sort algorithm
  */
 public class BubbleSort {
 	public static void sort(long[] arr) {
