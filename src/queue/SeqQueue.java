@@ -1,4 +1,4 @@
-package stack;
+package queue;
 
 /**
  * 顺序队列的实现 (基于数组)
