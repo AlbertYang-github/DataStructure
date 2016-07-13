@@ -1,4 +1,4 @@
-package seqlist;
+package linearlist;
 
 public class SeqListTest {
 	public static void main(String[] args) {

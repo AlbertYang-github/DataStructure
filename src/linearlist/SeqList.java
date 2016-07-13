@@ -1,4 +1,4 @@
-package seqlist;
+package linearlist;
 
 /**
  * sequential list
@@ -78,7 +78,7 @@ public class SeqList {
 	}
 
 	/**
-	 * find index according to value£¨dichotomy£©
+	 * find index according to valueï¿½ï¿½dichotomyï¿½ï¿½
 	 */
 	public int binarySearch(long value) {
 		int head = 0;

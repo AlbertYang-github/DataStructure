@@ -11,7 +11,7 @@ public class SeqQueue {
 	// 队头
 	private int front;
 	// 队尾
-	private int end;
+	private int rear;
 
 	/**
 	 * 默认构造方法
@@ -20,7 +20,7 @@ public class SeqQueue {
 		arr = new long[10];
 		elements = 0;
 		front = 0;
-		end = -1;
+		rear = -1;
 	}
 
 	/**
@@ -32,7 +32,7 @@ public class SeqQueue {
 		arr = new long[maxsize];
 		elements = 0;
 		front = 0;
-		end = -1;
+		rear = -1;
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class SeqQueue {
 	 * @param value
 	 */
 	public void insert(long value) {
-		arr[++end] = value;
+		arr[++rear] = value;
 		elements++;
 	}
 	
