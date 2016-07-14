@@ -41,6 +41,9 @@ public class SeqQueue {
 	 * @param value
 	 */
 	public void insert(long value) {
+		if (rear == arr.length - 1) {
+			rear = -1;
+		}
 		arr[++rear] = value;
 		elements++;
 	}
@@ -50,8 +53,12 @@ public class SeqQueue {
 	 * @return
 	 */
 	public long remove() {
+		long value = arr[front++];
+		if (front == arr.length) {
+			front = 0;
+		}
 		elements--;
-		return arr[front--];
+		return value;
 	}
 	
 	/**
